@@ -1,14 +1,18 @@
-from flask import Flask, request
+from flask import Flask
+from classes.flask_app import FlaskApp
+from classes.routes import Routes
 
 app = Flask(__name__, template_folder='templates')
+flask_app = FlaskApp(app)
+routes = Routes(app)
 
-@app.route('/')
-def index():
-    return "<h1>Hello World</h1>"
-
+flask_app.add_endpoint('/', 'index', routes.totals, methods=['GET'])
+flask_app.add_endpoint('/totals', 'index', routes.totals, methods=['GET'])
+flask_app.add_endpoint('/ep_log', 'ep_log', routes.ep_log, methods=['GET'])
+flask_app.add_endpoint('/gp_log', 'gp_log', routes.gp_log, methods=['GET'])
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    flask_app.run(host='0.0.0.0', debug=True)
 
 # @app.route('/hello', methods=['GET', 'POST'])
 # def hello():

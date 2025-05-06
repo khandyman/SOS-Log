@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}SoS Log - Totals{% endblock %}
+{% block content %}
+    <h1>SoS Log - Totals</h1>
+    <ul>
+        {% for character in characters %}
+            {% if character == 'Toryn' %}
+                <li style="color: red">{{ character|upper }}</li>
+            {% else %}
+                <li>{{ character }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('ep_log') }}">EP Log</a>
+    <a href="{{ url_for('gp_log') }}">GP Log</a>
+{% endblock %}
