@@ -1,0 +1,179 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.3.0">
+  <diagram name="Page-1" id="2ca16b54-16f6-2749-3443-fa8db7711227">
+    <mxGraphModel dx="1426" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2ed32ef02a7f4228-2" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;ep_log&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id_ep_log&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;PK,NN,UQ,AI&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_members&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;date&lt;/td&gt;&lt;td&gt;datetime&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;effort_points&lt;/td&gt;&lt;td&gt;int&lt;br&gt;&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_point_types&lt;br&gt;&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;earned_points&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_events&lt;br&gt;&lt;/td&gt;&lt;td&gt;int&lt;br&gt;&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;notes&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="710" y="29" width="300" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="2ed32ef02a7f4228-22" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="2ed32ef02a7f4228-11" target="TZskip04CWYYqw1hbyob-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="100" as="sourcePoint" />
+            <mxPoint x="380" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2ed32ef02a7f4228-5" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;cycles&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id_cycles&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN,UQ,AI&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;cycle_start&lt;/td&gt;&lt;td&gt;date&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;cycle_end&lt;/td&gt;&lt;td&gt;date&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ep_cap&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="90" y="250" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2ed32ef02a7f4228-11" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;members&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;id_members&lt;/td&gt;&lt;td&gt;NN,UQ,AI&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;discord_id&lt;/td&gt;&lt;td&gt;NN,UQ&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="410" y="40" width="220" height="60" as="geometry" />
+        </mxCell>
+        <object label="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;characters&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id_characters&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN,UQ,AI&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_members&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;char_name&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;NN,UQ&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;char_race&lt;/td&gt;&lt;td&gt;var&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;char_class&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;char_type&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;isOfficer&lt;/td&gt;&lt;td&gt;bool&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;char_priority&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" id="TZskip04CWYYqw1hbyob-2">
+          <mxCell style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+            <mxGeometry x="90" y="40" width="250" height="180" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="TZskip04CWYYqw1hbyob-4" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="2ed32ef02a7f4228-11" target="2ed32ef02a7f4228-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="170" as="sourcePoint" />
+            <mxPoint x="380" y="185" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="70" />
+              <mxPoint x="680" y="19" />
+              <mxPoint x="1050" y="19" />
+              <mxPoint x="1050" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-5" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;get_priority&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id_get_priority&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN,UQ,AI&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_members&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_bid_levels&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;priority_ratio&lt;/td&gt;&lt;td&gt;float&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_bid_nums&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="740" y="210" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-6" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2ed32ef02a7f4228-11" target="TZskip04CWYYqw1hbyob-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="260" as="sourcePoint" />
+            <mxPoint x="680" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="70" />
+              <mxPoint x="680" y="20" />
+              <mxPoint x="1050" y="20" />
+              <mxPoint x="1050" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-7" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;bid_nums&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id_bid_nums&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN,UQ&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="740" y="340" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-10" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="TZskip04CWYYqw1hbyob-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="450" as="sourcePoint" />
+            <mxPoint x="1000" y="304" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1020" y="370" />
+              <mxPoint x="1020" y="304" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-11" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;gp_log&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id_gp_log&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;PK,NN,UQ,AI&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_members&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;date&lt;/td&gt;&lt;td&gt;datetime&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;item_name&lt;/td&gt;&lt;td&gt;int&lt;br&gt;&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_bid_levels&lt;br&gt;&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;gear_points&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_events&lt;br&gt;&lt;/td&gt;&lt;td&gt;int&lt;br&gt;&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_bid_nums&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;notes&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="700" y="410" width="300" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-12" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;bid_levels&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id_bid_levels&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN,UQ,AI&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;bid_level&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;NN,UQ&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1100" y="253" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-13" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;entryX=0.992;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="TZskip04CWYYqw1hbyob-12" target="TZskip04CWYYqw1hbyob-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1310" y="180" as="sourcePoint" />
+            <mxPoint x="1020" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-14" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;events&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id_events&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN,UQ,AI&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_cycles&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_event_type&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;event_name&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;start&lt;/td&gt;&lt;td&gt;datetime&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;end&lt;/td&gt;&lt;td&gt;datetime&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;description&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="390" y="160" width="260" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-15" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;entryX=0;entryY=0.855;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="TZskip04CWYYqw1hbyob-14" target="2ed32ef02a7f4228-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="410" as="sourcePoint" />
+            <mxPoint x="350" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-16" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="2ed32ef02a7f4228-11" target="TZskip04CWYYqw1hbyob-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="450" as="sourcePoint" />
+            <mxPoint x="390" y="465" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="70" />
+              <mxPoint x="680" y="20" />
+              <mxPoint x="1050" y="20" />
+              <mxPoint x="1050" y="458" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-17" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="TZskip04CWYYqw1hbyob-14" target="TZskip04CWYYqw1hbyob-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="206" as="sourcePoint" />
+            <mxPoint x="720" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-18" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="TZskip04CWYYqw1hbyob-7" target="TZskip04CWYYqw1hbyob-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="446" as="sourcePoint" />
+            <mxPoint x="1040" y="550" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1020" y="370" />
+              <mxPoint x="1020" y="553" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-20" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;event_types&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id_event_types&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN,UQ,AI&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;event_type&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;NN,UQ&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="390" y="350" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-21" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TZskip04CWYYqw1hbyob-20" target="TZskip04CWYYqw1hbyob-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="520" as="sourcePoint" />
+            <mxPoint x="380" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="380" />
+              <mxPoint x="370" y="233" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-22" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="2ed32ef02a7f4228-5" target="TZskip04CWYYqw1hbyob-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="440" as="sourcePoint" />
+            <mxPoint x="300" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="350" y="273" />
+              <mxPoint x="350" y="196" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-23" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;point_types&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id_point_types&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN,UQ,AI&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;point_type&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;NN,UQ&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1090" y="81.5" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-24" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="TZskip04CWYYqw1hbyob-23" target="2ed32ef02a7f4228-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1365" y="29" as="sourcePoint" />
+            <mxPoint x="1075" y="44" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-25" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;respawns&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id_respawns&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;PK,NN,UQ,AI&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;mob_name&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;NN,UQ&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;mob_zone&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lockout_weeks&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lockout_days&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lockout_hours&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lockout_minutes&lt;br&gt;&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;kill_time&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;respawn_time&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;time_zone&lt;/td&gt;&lt;td&gt;var&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="130" y="470" width="300" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-26" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;priority&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id_priority&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN,UQ,AI&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_members&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sum_ep&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sum_gp&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;curr_pr&lt;/td&gt;&lt;td&gt;float&lt;/td&gt;&lt;td&gt;NN&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1110" y="431" width="260" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-27" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="TZskip04CWYYqw1hbyob-12" target="TZskip04CWYYqw1hbyob-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1110" y="293" as="sourcePoint" />
+            <mxPoint x="1008" y="293" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1070" y="283" />
+              <mxPoint x="1070" y="505" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZskip04CWYYqw1hbyob-28" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERone;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;startFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2ed32ef02a7f4228-11" target="TZskip04CWYYqw1hbyob-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="363" as="sourcePoint" />
+            <mxPoint x="1060" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="70" />
+              <mxPoint x="680" y="20" />
+              <mxPoint x="1050" y="20" />
+              <mxPoint x="1050" y="489" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
